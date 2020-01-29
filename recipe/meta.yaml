@@ -34,11 +34,13 @@ requirements:
     - r-base
     - r-rcpp >=0.12.15
     - r-rcpparmadillo
+    - r-irlba
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
     - r-rcpp >=0.12.15
     - r-rcpparmadillo
+    - r-irlba
 
 test:
   commands:
