@@ -1,4 +1,4 @@
-{% set version = "0.3-17" %}
+{% set version = "0.3-43" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mixsqp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mixsqp/mixsqp_{{ version }}.tar.gz
-  sha256: 5600d0021d52379628820374a6bfce0e81d35d7666dbec64e3ab14fc6e2fb336
+  sha256: 58042d832803462ca03197a9dbd49d022378756de8996682b89e6bc009d02ce2
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -51,13 +51,8 @@ about:
   home: https://github.com/stephenslab/mixsqp
   license: MIT
   license_file: LICENSE
-  summary: Provides optimization algorithms based on sequential quadratic programming (SQP) for
-    maximum likelihood estimation of the mixture proportions in a finite mixture model
-    where the component densities are known. The algorithms are expected to obtain solutions
-    that are at least as accurate as the state-of-the-art MOSEK interior-point solver
-    (called by function "KWDual" in the 'REBayes' package), and they are expected to
-    arrive at solutions more quickly in large data sets. The algorithms are described
-    in Y. Kim, P. Carbonetto, M. Stephens & M. Anitescu (2012) <arXiv:1806.01412>.
+  summary: Provides optimization algorithms based on sequential quadratic programming (SQP) for maximum likelihood estimation of the mixture proportions in a finite mixture model where the component densities are known. The algorithms are expected to obtain solutions that are at least as accurate as the state-of-the-art
+    MOSEK interior-point solver (called by function "KWDual" in the 'REBayes' package), and they are expected to arrive at solutions more quickly in large data sets. The algorithms are described in Y. Kim, P. Carbonetto, M. Stephens & M. Anitescu (2012) <arXiv:1806.01412>.
   license_family: MIT
 
 extra:
