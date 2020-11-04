@@ -30,6 +30,7 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - llvm-openmp  # [osx]
   host:
     - r-base
     - r-rcpp >=0.12.15
@@ -37,13 +38,13 @@ requirements:
     - r-irlba
     - libblas
     - liblapack
-    - openmp
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-rcpp >=0.12.15
     - r-rcpparmadillo
     - r-irlba
+    - llvm-openmp  # [osx]
 
 test:
   commands:
