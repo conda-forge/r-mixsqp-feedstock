@@ -37,6 +37,7 @@ requirements:
     - r-irlba
     - libblas
     - liblapack
+    - openmp
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
