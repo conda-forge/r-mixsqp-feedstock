@@ -1,4 +1,4 @@
-{% set version = "0.3-43" %}
+{% set version = "0.3-48" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mixsqp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mixsqp/mixsqp_{{ version }}.tar.gz
-  sha256: 58042d832803462ca03197a9dbd49d022378756de8996682b89e6bc009d02ce2
+  sha256: 8874d7c2ce1a43ffe55d2de450bc7bd4e252d7e621c40ebc8f1fc752c7789209
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
