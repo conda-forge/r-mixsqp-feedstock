@@ -3,6 +3,19 @@ About r-mixsqp-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mixsqp-feedstock/blob/main/LICENSE.txt)
 
+
+About r-mixsqp
+--------------
+
+Home: https://github.com/stephenslab/mixsqp
+
+Package license: MIT
+
+Summary: Provides optimization algorithms based on sequential quadratic programming (SQP) for maximum likelihood estimation of the mixture proportions in a finite mixture model where the component densities are known. The algorithms are expected to obtain solutions that are at least as accurate as the state-of-the-art MOSEK interior-point solver (called by function "KWDual" in the 'REBayes' package), and they are expected to arrive at solutions more quickly in large data sets. The algorithms are described in Y. Kim, P. Carbonetto, M. Stephens & M. Anitescu (2012) <arXiv:1806.01412>.
+
+About r-mixsqp
+--------------
+
 Home: https://github.com/stephenslab/mixsqp
 
 Package license: MIT
